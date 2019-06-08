@@ -14,3 +14,8 @@
 ## 11,2
 ## 12,3
 ##
+fecha = [row[2].split('-') for row in archivo]
+mes = [row[1] for row in fecha]
+mes.sort()
+q04 = collections.Counter(mes)
+q04

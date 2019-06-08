@@ -8,3 +8,8 @@
 ## D,23
 ## E,67
 ##
+q03 = []
+for i, g in groupby(sorted(archivo), key=lambda x: x[0]):
+    q03.append([i, sum(row[1] for row in g)])
+
+for i in q03: print(i)
